@@ -1,43 +1,39 @@
-
 header {
-    width: auto;
-    text-align: center;
-
+  width: auto;
+  text-align: center;
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #F8F9FA;
-    padding-top: 7px;
-    padding-bottom: 7px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 ul li {
-    list-style-type: none;
-    padding-left: 8px;
-    padding-right: 8px;
+  list-style-type: none;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 ul li:first-child {
-
-    font-family: Impact;
+  font-family: Impact;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 nav a:hover {
-    color: black;
+  color: black;
 }
 
-div#slider {
+/*div#slider {
     width: auto;
     margin: 7px;
 }
@@ -45,203 +41,190 @@ div#slider {
 div#slider img {
 
 width: 100%;
-}
+} */
 
 div#publicite {
-    width: auto;
-    display: flex;
-    flex-flow: wrap;
+  width: auto;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .largeur {
-    width:33%;
+  width: 33%;
 }
 
-div#hottest h2, div#hottest p {
-    text-align: center;
+div#hottest h2,
+div#hottest p {
+  text-align: center;
 }
 
 div#hottest h2 {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 div#hottest {
-    background-color: #444040;
+  background-color: #444040;
 }
 
 div#popular {
-    width: auto;
+  width: auto;
 }
 
-div#popular h2, div#popular p, div#titreblog p, div#titreblog h2 {
-    text-align: center;
+div#popular h2,
+div#popular p,
+div#titreblog p,
+div#titreblog h2 {
+  text-align: center;
 }
 
 div#produits {
-    width:1110px;
-    margin-left: auto;
-    margin-right:auto;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div#produits .produit img {
-    width: 350px;
-    height: 350px;
+  width: 350px;
+  height: 350px;
 }
 
 div#produits .produit {
-    float: left;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 15px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 button {
-    background-color: #444040;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #444040;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0069d9;
+  background-color: #0069d9;
 }
 div#titreblog {
-    clear: left;
+  clear: left;
 }
 
 div#blogs {
-    display:flex;
-    width: 1110px;
-    margin-left:auto;
-    margin-right:auto;
+  display: flex;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.blog img {
-    width: 330px;
-    height: 141px;
+  width: 330px;
+  height: 141px;
 }
 
 div.blog p:last-child {
-    border-top: 1px solid rgba(0, 0, 0, 0.125);
-    margin-right: 10px;
-    margin-left: 5px;
-    background-color: #F7F7F7;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: grey;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  margin-right: 10px;
+  margin-left: 5px;
+  background-color: #f7f7f7;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: grey;
 }
 
 footer {
-    width:auto;
-    height: 50px;
-    background-color: #444040;
+  width: auto;
+  height: 50px;
+  background-color: #444040;
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 590px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-    ul {
-        display:flex;
-        flex-direction: column;
-        text-align: center;
+  div#slider img {
+    width: 100%;
+  }
 
-    }
-
-    div#slider img {
-
-        width: 100%;
-        }
-
-    
-div#publicite {
+  div#publicite {
     width: auto;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.largeur {
-    width:100%;
-}
+  .largeur {
+    width: 100%;
+  }
 
-div#produits{
-    display:flex;
+  div#produits {
+    display: flex;
     flex-direction: column;
-}
+  }
 
-div#blogs {
-    display:flex;
+  div#blogs {
+    display: flex;
     flex-direction: column;
     width: 590px;
-}
+  }
 
-div.blog img {
+  div.blog img {
     width: 100%;
-}
+  }
 
-div#produits .produit img {
+  div#produits .produit img {
     width: 100%;
-}
+  }
 
-
-nav , div#slider, div#publicite, div#produits {
+  nav,
+  div#slider,
+  div#publicite,
+  div#produits {
     width: auto;
+  }
 }
 
-    
+@media screen and (min-width: 591px) and (max-width: 900px) {
+  div.largeur,
+  img.largeur {
+    width: 50%;
+  }
+
+  div#produits {
+    width: 100%;
+  }
+
+  div#produits .produit {
+    float: left;
+    width: 48%;
+  }
+
+  div#blogs {
+    display: block;
+    width: 100%;
+  }
+
+  div.blog {
+    float: left;
+    width: 47%;
+    margin-right: 15px;
+  }
+
+  div.blog img {
+    width: 100%;
+  }
+
+  div#blogs {
+    width: auto;
+  }
+
+  footer {
+    clear: both;
+  }
+
+  div#produits .produit img {
+    width: 100%;
+  }
 }
-
-
-@media screen and (min-width: 591px) and (max-width: 900px){
-
-    div.largeur, img.largeur  {
-        width: 50%;
-    }
-
-    div#produits {
-        width:100%;
-     
-    }
-
-    div#produits .produit {
-        float: left;
-        width: 48%;
-    }
-
-    div#blogs {
-        display:block;
-        width: 100%;
-    }
-
-    div.blog  {
-        float:left;
-        width: 47%;
-        margin-right: 15px;
-    }
-
-    div.blog img {
-        width: 100%;
-    }
-
-    div#blogs {
-
-        width: auto;
-    }
-
-    footer{
-        clear: both;
-    }
-
-    div#produits .produit img {
-        width: 100%;
-      }
-}
-
-
-
-
-
-
-
-
-
-
